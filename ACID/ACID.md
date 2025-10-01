@@ -5,6 +5,7 @@ All commit or nothing, if any transaction fails rollback everything.
 
 ### Consistency
 Database should remain in valid state before and after transaction following every constraints or rollback.
+Database should move from one valid state to another after transactions.
 
 ### Isolation
 Changes made by one transaction should not be visible to other transaction before commited.
