@@ -9,29 +9,19 @@
     - Support for uploading/streaming large videos 256GB
 
 * Scale 
-- 100:1 (Users watching:users uploading)
-- 100 million views, 1 millions uploads
+    - 100 million active users
+    - 100:1 (Users watching:users uploading), 1 million video uploads(256gb max size each)
 
+* API
+    - //upload video
+        ```
+        POST /video
+        {
+            VideoMetaData
+        }
+        ```
 
-Requirement(Functional,Non-Functional)
-Core Entities
-API Interface
-Data flow
-High Level Design
-Deep dives
-
-Core Entities
-Video
-Video metadata
-User
-
-API
-upload video
-POST /video
-{
-    VideoMetaData
-}
-
-//Watch video
-GET /Video/:videoId
-
+    - //Watch video
+        ```
+        GET /Video/:videoId
+        ```
